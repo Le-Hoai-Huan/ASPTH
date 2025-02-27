@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">    
+    <title>Chi Tiết Xe MG ZS ST+</title>
+    <style>
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .price {
+            font-size: 28px;
+            color: #e74c3c;
+            text-align: center;
+            margin: 20px 0;
+            font-weight: bold;
+        }
+
+        .specs {
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+
+            
+        }
+
+        .specs p {
+            margin: 10px 0;
+            color: #555;
+            font-size: 16px;
+        }
+
+        .specs strong {
+            color: #333;
+        }
+
+        .actions {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .actions button {
+            padding: 12px 24px;
+            font-size: 16px;
+            color: white;
+            background-color: #3498db;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+
+        .actions button:hover {
+            background-color: #2980b9;
+        }
+
+
+        @media (max-width: 768px) {
+            .footer {
+                grid-template-columns: 1fr;
+            }
+
+            .actions {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .actions button {
+                width: 80%;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="Index.html" target="_blank">Trang Chủ</a></li>
+            <li><a href="https://mgmotor.vn/san-pham/mg-zs/" target="_blank">Sản Phẩm</a></li>
+            <li><a href="https://www.facebook.com/huan.le.916911/" target="_blank">Liên Hệ</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        
+        <h1>MG ZS ST+</h1>
+        <div class="price">Từ 518.000.000 VNĐ</div>
+        
+        <div class="specs">
+            <p><strong>Trọng lượng không tải:</strong> 1.290kg</p>
+            <p><strong>Công suất/Trọng lượng:</strong> 0,086 Hp/Kg</p>
+            <p><strong>Dung tích bình xăng:</strong> 48L</p>
+            <p><strong>Kích thước tổng thể:</strong> 4.323mm x 1.809mm x 1.653mm</p>
+            <p><strong>Lốp xe trước/sau:</strong> 215/60R16</p>
+            <p><strong>Ghế lái:</strong> Chính tay 6 hướng</p>
+        </div>
+
+        <div class="actions">
+            <button>CHI PHÍ LĂN BÁNH</button>
+            <button onclick="window.location.href='index.html'">Quay về Trang Chủ</button>
+            <button>THÊM VÀO GIỎ HÀNG</button>
+            <button>ĐẶT XE</button>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-item">
+            <h3> Email</h3>
+            <p>lehoaihuan@gmail.com</p>
+        </div>
+        <div class="footer-item">
+            <h3>Địa Chỉ</h3>
+            <p>Xa lộ hà nội</p>
+        </div>
+        <div class="footer-item">
+            <h3>SDT</h3>
+            <p>096243xxxx</p>
+        </div>
+    </div>
+</body>
+</html>

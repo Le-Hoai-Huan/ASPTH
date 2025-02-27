@@ -1,0 +1,148 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+
+header {
+    background-color: #ffcc00;
+    color: #333;
+    padding: 20px;
+    text-align: center;
+    grid-column: 1 / span 2;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+nav {
+    background-color: #ff7f50;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    grid-column: 1 / span 2;
+    border-radius: 10px;
+}
+nav ul {
+    list-style: none;
+}
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.product-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    height: 100%; 
+}
+.product-card:hover {
+    transform: scale(1.05);
+}
+.product-card img {
+    max-width: 100%;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+.sidebar {
+    background-color: #4a90e2;
+    color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+}
+.social-icons {
+    margin-top: 20px;
+}
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.button {
+    background-color: #04aa6d;
+    border: none;
+    color: white;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.button:hover {
+    background-color: #038c58;
+    color: darkorange;
+}
+
+
+.footer {
+    background-color: #e0e0e0;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    grid-column: 1 / span 2;
+    display: grid;
+    gap: 20px;
+    border-radius: 30px;
+}
+.footer-item {
+    background-color: #b3e5fc;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+
+@media (max-width: 576px) {
+    body {
+        grid-template-columns: 1fr;
+    }
+    .sidebar {
+        grid-column: 1 / span 2;
+    }
+    .footer {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 768px) {
+    .footer {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
