@@ -1,0 +1,25 @@
+﻿@model IEnumerable<WebBanHangMVC.Models.Category>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1 class="text-2xl font-bold mb-4">Danh sách danh mục</h1>
+
+<p>
+    <a asp-action="Add" class="bg-blue-500 text-white px-4 py-2 rounded-lg">Tạo Mới</a>
+</p>
+
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+    @foreach (var item in Model)
+    {
+            <div class="bg-white rounded-2xl shadow-lg p-6 flex flex-col items-center">
+                <h2 class="text-xl font-semibold mb-2">@item.Name</h2>
+                <div class="mt-4 flex space-x-4">
+                    <a asp-action="Update" asp-route-id="@item.Id" class="text-blue-500 hover:underline">Chỉnh sửa</a>
+                    <a asp-action="Details" asp-route-id="@item.Id" class="text-green-500 hover:underline">Xem chi tiết</a>
+                    <a asp-action="Delete" asp-route-id="@item.Id" class="text-red-500 hover:underline">Xóa</a>
+                </div>
+            </div>
+    }
+</div>
